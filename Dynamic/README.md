@@ -17,6 +17,16 @@
 2. [**Gin-Gonic**](#instalar-gin-gonic)
 3. [**Config File**](./config.json)
 
+
+## Indice
+
+1. [Instalar Gin-Gonic](#instalar-gin-gonic)
+2. [Modelo de arquivo de configuração](#modelo-de-arquivo-de-configuração)
+3. [Iniciar o Projeto](#iniciar-o-projeto)
+4. [Pagina de Testes](#pagina-de-testes)
+5. [Requisitos](#requisitos-1)
+
+
 ## Instalar Gin-Gonic
 
 1. **Garanta que seu console esta na pasta Dynamic**
@@ -134,3 +144,11 @@
 > Caso tenha modificado a porta lembre-se de modifica no link tambem
 
 2. **[http://127.0.0.1:port/](http://127.0.0.1:8080/)**
+
+## Requisitos
+
+> 1. **[Merge Sorter](./helper/sorter.go) Code** ".go" - Filter By ID
+> 2. **[k-min / k-max - Heap](./helper/heap.go) Code** ".go" - Filter by min or max price [5 itens]
+> 3. **[Binary Tree Search](./helper/binary-tree.go)** ".go" - text search
+
+[Logic on Controller](./controller/controller.go#GetDynamic)
