@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace da Ancora</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Ancora Marketplace</h1>
+        <p>Encontre peças automotivas com os melhores preços</p>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar por peça, modelo, marca...">
+        <button onclick="search()">Buscar</button>
+    </div>
+    
+    <div>
+        <h2 style="text-align: center;">Filtros</h2>
+        <div class="filter-group">
+            <button class="filter-button" onclick="filterK()">Preço</button>
+            <button class="filter-button" onclick="sort()">ID</button>
+            <button class="filter-button" onclick="clearFilters()">Limpar</button>
+        </div>
+    </div>
+    
+
+    <section class="product-list">
+        {{ range .Products }}
+        <div class="product-card">
+            <img src="{{ .Image }}" alt="{{ .Name }}">
+            <h3>{{ .Name }}</h3>
+            <p class="price">R$ {{ .Price }}</p>
+        </div>
+        {{ end }}
+    </section>
+    <script>
+        function search() {
+            let searchTerm = document.querySelector('.search-bar input').value;
+            if (searchTerm.length > 0) {
+                let Params = new URLSearchParams();
+                Params.set('search', searchTerm);
+                window.location.search = Params.toString();
+            } else {
+                alert('Por favor, insira um termo de busca.');
+            }
+        }
+        function filterK() {
+            let oldParams = new URLSearchParams(window.location.search);
+            let Params = new URLSearchParams();
+            if (oldParams.has('k-type') && oldParams.get('k-type') === 'min') {
+                Params.set('k-type', 'max');
+            } else {
+                Params.set('k-type', 'min');
+            }
+            window.location.search = Params.toString();
+        }
+        function sort() {
+            let oldParams = new URLSearchParams(window.location.search);
+            let Params = new URLSearchParams();
+            if (oldParams.has('sort') && oldParams.get('sort') === 'asc') {
+                Params.set('sort', 'desc');
+            } else {
+                Params.set('sort', 'asc');
+            }
+            window.location.search = Params.toString();
+        }
+        function clearFilters() {
+            let Params = new URLSearchParams(window.location.search);
+            Params.delete('search');
+            Params.delete('k-type');
+            Params.delete('sort');
+            window.location.search = Params.toString();
+        }
+    </script>
+</body>
+</html>

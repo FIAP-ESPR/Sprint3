@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "ambient": {
+    "name" : "Development",
+    "description" : "Development environment",
+    "host" : "localhost",
+    "port" : 80,
+    "protocol" : "http"
+  },
+  "database": {
+    "provider" : "",
+    "host" : "",
+    "port" : 0,
+    "service_name" : "",
+    "username" : "",
+    "password" : "",
+    "schema" : "",
+    "connection_string" : ""
+  },
+  "logging": {
+    "level" : "*",
+    "file" : "logs/",
+    "mimetype" : "text/plain",
+    "extension" : ".log"
+  },
+  "template" : "./website/html/",
+  "static" : "./website/static/"
+}
