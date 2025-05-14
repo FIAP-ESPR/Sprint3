@@ -1,4 +1,4 @@
-# Sprint 3 - Dynamic Programming
+# Sprint 4 - Dynamic Programming
 
 ### Grupo
 |Nome|RM|
@@ -15,16 +15,14 @@
 
 1. [**[Golang 1.23.2]**](https://dl.google.com/go/go1.23.2.windows-amd64.msi) or [download other](https://go.dev/dl/)
 2. [**Gin-Gonic**](#instalar-gin-gonic)
-3. [**Config File**](./config.json)
 
 
 ## Indice
 
 1. [Instalar Gin-Gonic](#instalar-gin-gonic)
-2. [Modelo de arquivo de configuração](#modelo-de-arquivo-de-configuração)
-3. [Iniciar o Projeto](#iniciar-o-projeto)
-4. [Pagina de Testes](#pagina-de-testes)
-5. [Requisitos](#requisitos-1)
+2. [Iniciar o Projeto](#iniciar-o-projeto)
+3. [Pagina de Testes](#pagina-de-testes)
+4. [Requisitos](#requisitos-1)
 
 
 ## Instalar Gin-Gonic
