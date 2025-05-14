@@ -93,5 +93,6 @@
 
 ![image](https://github.com/user-attachments/assets/d03aa329-8892-4317-a728-168c994cdbbc)
 
-- Mapa de Endereços e "Edges" [aqui](./main.go:L15)
+- Mapa de Endereços e "Edges" [main file](./main.go#L15)
+- Quando gerei as rotas as regras foram: que nenhum ponto fique sem conexão e que nenhum ponto tenha mais de tres vertices. (nao foram levadas em consideração proximidade ou ruas nos mapas, os dados e locais foram gerados atravez de IA para facilitação, entao sao dados sem significado real e tem o unico proposito de demonstrar o funcionamento)
 
