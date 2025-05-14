@@ -93,3 +93,5 @@
 
 ![image](https://github.com/user-attachments/assets/d03aa329-8892-4317-a728-168c994cdbbc)
 
+- Mapa de Endereços e "Edges" [aqui](./main.go:L15)
+
