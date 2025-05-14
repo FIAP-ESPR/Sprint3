@@ -88,3 +88,8 @@
 ## Requisitos
 
 > 1. **[Dijkstra Path Finder](./dijkstra.go) Code**
+
+## Prova de Conceito
+
+![image](https://github.com/user-attachments/assets/d03aa329-8892-4317-a728-168c994cdbbc)
+
